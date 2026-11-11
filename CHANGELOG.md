@@ -2,6 +2,10 @@
 
 All notable changes to this plugin are documented here.
 
+## Unreleased
+
+- Publish a format-1 plugin index and GitHub Pages landing page for Discover.
+
 ## 0.1.3
 
 - Make the per-pin delete button visible without hovering; add a red hover state and tooltip.

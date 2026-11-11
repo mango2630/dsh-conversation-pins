@@ -3,6 +3,7 @@
 [![Check](https://github.com/mango2630/dsh-conversation-pins/actions/workflows/check.yml/badge.svg)](https://github.com/mango2630/dsh-conversation-pins/actions/workflows/check.yml)
 [![Release](https://img.shields.io/github/v/release/mango2630/dsh-conversation-pins)](https://github.com/mango2630/dsh-conversation-pins/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Pages](https://github.com/mango2630/dsh-conversation-pins/actions/workflows/pages.yml/badge.svg)](https://github.com/mango2630/dsh-conversation-pins/actions/workflows/pages.yml)
 
 [English](README.md) | 简体中文
 
@@ -87,7 +88,19 @@ dsh plugin --profile web remove dsh-conversation-pins
 dsh plugin --profile web add github:mango2630/dsh-conversation-pins
 ```
 
-推送 `v0.1.2` 这样的 tag，release workflow 会构建并把 tarball 附到 GitHub Release。
+推送 `v0.1.3` 这样的 tag，release workflow 会构建并把 tarball 附到 GitHub Release。
+
+### 通过插件索引安装
+
+仓库发布了 format 1 插件索引：
+
+```text
+https://mango2630.github.io/dsh-conversation-pins/index.json
+```
+
+在 DSH 里启用实验性插件 **Custom plugin indexes**，打开 **Discover → Add index source**，粘贴上面的 URL。索引固定到准确的 release commit，不依赖会移动的 `main` 分支。
+
+可读页面：[mango2630.github.io/dsh-conversation-pins](https://mango2630.github.io/dsh-conversation-pins/)。
 
 ## 使用
 

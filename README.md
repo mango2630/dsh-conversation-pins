@@ -3,6 +3,7 @@
 [![Check](https://github.com/mango2630/dsh-conversation-pins/actions/workflows/check.yml/badge.svg)](https://github.com/mango2630/dsh-conversation-pins/actions/workflows/check.yml)
 [![Release](https://img.shields.io/github/v/release/mango2630/dsh-conversation-pins)](https://github.com/mango2630/dsh-conversation-pins/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Pages](https://github.com/mango2630/dsh-conversation-pins/actions/workflows/pages.yml/badge.svg)](https://github.com/mango2630/dsh-conversation-pins/actions/workflows/pages.yml)
 
 English | [简体中文](README.zh.md)
 
@@ -87,7 +88,19 @@ Git installs work without a build step because `lib/` is committed:
 dsh plugin --profile web add github:mango2630/dsh-conversation-pins
 ```
 
-Push a tag such as `v0.1.2` to let the release workflow build and attach a tarball to the GitHub release.
+Push a tag such as `v0.1.3` to let the release workflow build and attach a tarball to the GitHub release.
+
+### Install from the plugin index
+
+The repository publishes a format-1 plugin index at:
+
+```text
+https://mango2630.github.io/dsh-conversation-pins/index.json
+```
+
+In DSH, enable **Custom plugin indexes** under Experimental plugins, open **Discover → Add index source**, and paste that URL. The index pins an exact release commit, so installation does not depend on the moving `main` branch.
+
+The human-readable landing page is [mango2630.github.io/dsh-conversation-pins](https://mango2630.github.io/dsh-conversation-pins/).
 
 ## Usage
 

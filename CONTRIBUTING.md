@@ -32,3 +32,23 @@ Do not commit `node_modules`, packed tarballs, personal paths, or session data.
 - Keep the host half a no-op unless a feature genuinely needs a host service.
 - Preserve the committed bundle whenever browser sources change.
 - Describe user-visible behavior and the DSH versions you tested against.
+
+
+## Releasing and updating the plugin index
+
+`docs/index.json` is the public Discover index. Its first version pins a release by commit, not by tag:
+
+1. Bump `package.json`, update `CHANGELOG.md`, rebuild and commit `lib/client.js`.
+2. Tag and push the release (`git tag vX.Y.Z && git push origin vX.Y.Z`).
+3. Read the release commit and timestamp:
+
+   ```sh
+   git rev-parse vX.Y.Z^{commit}
+   git show -s --format=%ct vX.Y.Z
+   ```
+
+4. Update `docs/index.json` with that version, commit, and `publishTimestamp`.
+5. Commit the index update and push `main`. The Pages workflow deploys it to
+   `https://mango2630.github.io/dsh-conversation-pins/index.json`.
+
+The index installs the exact commit in `source.commit`; never point it at a moving branch.
