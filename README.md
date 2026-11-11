@@ -17,6 +17,7 @@ Conversation Pins is a **DeepSeek Harness Web / Desktop client plugin**. It adds
 - **Keyboard-first** — hover a block and press `Alt + P` to pin it. Press `Alt + Shift + P` to toggle the pinboard.
 - **Six-character labels** — each pin is named from the first six visible characters, with grapheme-aware truncation for CJK and emoji.
 - **Numbered markers** — pinned blocks are softly highlighted and marked in the transcript gutter.
+- **Per-pin delete** — every pinboard row has a visible delete control, separate from the clear-all action.
 - **Long-thread jumps** — the pinboard scrolls back to the block, loads older history only when needed, expands folded turns when possible, and verifies that the target actually landed in view.
 - **Per-session storage** — pins are stored in `localStorage`, separated by `sessionId`; switching sessions does not mix them.
 - **Bilingual UI** — follows the DSH locale and can be switched between 中文 and English from the panel.
@@ -45,7 +46,7 @@ dsh plugin --profile web add /path/to/dsh-conversation-pins
 
 # Or from a packed tarball
 pnpm pack
-dsh plugin --profile web add ./dsh-conversation-pins-0.1.2.tgz
+dsh plugin --profile web add ./dsh-conversation-pins-0.1.3.tgz
 ```
 
 Restart `dsh web` afterwards. Verify the layer with:

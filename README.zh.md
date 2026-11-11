@@ -17,6 +17,7 @@
 - **快捷键打钉**：悬停某段输出后按 `Alt + P` 直接打钉；`Alt + Shift + P` 开关面板。
 - **前 6 个字符标签**：按可见文本计算，支持中文和 emoji 的完整字素截断。
 - **编号图钉**：已固定位置在正文左侧显示编号，正文有淡琥珀色高亮。
+- **单条删除**：图钉面板每行右侧都有删除按钮，和“全部清除”分开。
 - **长对话跳回**：优先使用当前已加载的 DOM，必要时才加载历史；能展开折叠的轮次；滚动后会校验目标是否真正进入可视区，被流式渲染打断时用即时滚动校正。
 - **每个会话独立**：按 `sessionId` 存进 `localStorage`，切换会话不会串。
 - **中英双语**：跟随 DSH 语言，也可以在面板底部手动切换。
@@ -45,7 +46,7 @@ dsh plugin --profile web add /path/to/dsh-conversation-pins
 
 # 或 tarball
 pnpm pack
-dsh plugin --profile web add ./dsh-conversation-pins-0.1.2.tgz
+dsh plugin --profile web add ./dsh-conversation-pins-0.1.3.tgz
 ```
 
 安装后重启 `dsh web`。确认安装层：

@@ -2,6 +2,10 @@
 
 All notable changes to this plugin are documented here.
 
+## 0.1.3
+
+- Make the per-pin delete button visible without hovering; add a red hover state and tooltip.
+
 ## 0.1.2
 
 - Prefer the currently rendered DOM when jumping to a pin; load history only when the target is not loaded.
