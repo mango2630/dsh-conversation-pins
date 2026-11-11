@@ -10,6 +10,26 @@ Pin any block of a DeepSeek Harness conversation and jump back to it later. Long
 
 Conversation Pins is a **DeepSeek Harness Web / Desktop client plugin**. It adds a small pin control to rendered output, a numbered marker rail, and a per-session pinboard. It is not a ChatGPT plugin and cannot be installed into ChatGPT's own transcript.
 
+## Preview
+
+![Conversation Pins overview: a long answer with pinned blocks and a pinboard](docs/overview.svg)
+
+**Hover, then move to the pin**
+
+![A hovered paragraph with a pin button and the Alt+P shortcut](docs/hover.svg)
+
+**Pinboard and per-pin delete**
+
+![Pinboard with numbered pins and visible delete buttons](docs/pinboard.svg)
+
+**Jumping from the bottom back to a pin**
+
+![Jumping from the bottom of a long answer back to pin 2](docs/jump.svg)
+
+*Clicking a pin moves the conversation scroller, expands folded content when needed, and verifies the target is visible.*
+
+*Illustrations use synthetic content. The real UI follows the active DSH theme and locale.*
+
 ## Features
 
 - **Pin any rendered block** — paragraphs, headings, list items, quotes, code blocks, and table cells.
