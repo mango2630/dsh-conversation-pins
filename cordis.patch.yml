@@ -1,0 +1,5 @@
+# Conversation Pins: installs one Web client row. The host half is a no-op;
+# the browser half attaches to the shell overlay and the active session.
+- insert:
+    - id: conversation-pins
+      name: dsh-conversation-pins

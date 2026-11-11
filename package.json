@@ -1,0 +1,58 @@
+{
+  "name": "dsh-conversation-pins",
+  "version": "0.1.2",
+  "description": "Pin any block in a DeepSeek Harness conversation and jump back to it later.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "pins",
+    "bookmarks",
+    "chat"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mango2630/dsh-conversation-pins.git"
+  },
+  "homepage": "https://github.com/mango2630/dsh-conversation-pins#readme",
+  "bugs": {
+    "url": "https://github.com/mango2630/dsh-conversation-pins/issues"
+  },
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.0 <0.3.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node --check lib/client.js && node --check lib/index.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
