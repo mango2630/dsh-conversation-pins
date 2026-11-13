@@ -49,6 +49,6 @@ Do not commit `node_modules`, packed tarballs, personal paths, or session data.
 
 4. Update `docs/index.json` with that version, commit, and `publishTimestamp`.
 5. Commit the index update and push `main`. The Pages workflow deploys it to
-   `https://mango2630.github.io/dsh-conversation-pins/index.json`.
+   `https://yuanxiao2630.github.io/dsh-conversation-pins/index.json`.
 
 The index installs the exact commit in `source.commit`; never point it at a moving branch.

@@ -1,9 +1,9 @@
 # Conversation Pins
 
-[![Check](https://github.com/mango2630/dsh-conversation-pins/actions/workflows/check.yml/badge.svg)](https://github.com/mango2630/dsh-conversation-pins/actions/workflows/check.yml)
-[![Release](https://img.shields.io/github/v/release/mango2630/dsh-conversation-pins)](https://github.com/mango2630/dsh-conversation-pins/releases)
+[![Check](https://github.com/yuanxiao2630/dsh-conversation-pins/actions/workflows/check.yml/badge.svg)](https://github.com/yuanxiao2630/dsh-conversation-pins/actions/workflows/check.yml)
+[![Release](https://img.shields.io/github/v/release/yuanxiao2630/dsh-conversation-pins)](https://github.com/yuanxiao2630/dsh-conversation-pins/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Pages](https://github.com/mango2630/dsh-conversation-pins/actions/workflows/pages.yml/badge.svg)](https://github.com/mango2630/dsh-conversation-pins/actions/workflows/pages.yml)
+[![Pages](https://github.com/yuanxiao2630/dsh-conversation-pins/actions/workflows/pages.yml/badge.svg)](https://github.com/yuanxiao2630/dsh-conversation-pins/actions/workflows/pages.yml)
 
 English | [简体中文](README.zh.md)
 
@@ -67,7 +67,7 @@ dsh plugin --profile web add /path/to/dsh-conversation-pins
 
 # Or from a packed tarball
 pnpm pack
-dsh plugin --profile web add ./dsh-conversation-pins-0.1.3.tgz
+dsh plugin --profile web add ./dsh-conversation-pins-0.1.4.tgz
 ```
 
 Restart `dsh web` afterwards. Verify the layer with:
@@ -85,7 +85,7 @@ dsh plugin --profile web remove dsh-conversation-pins
 Git installs work without a build step because `lib/` is committed:
 
 ```sh
-dsh plugin --profile web add github:mango2630/dsh-conversation-pins
+dsh plugin --profile web add github:yuanxiao2630/dsh-conversation-pins
 ```
 
 Push a tag such as `v0.1.3` to let the release workflow build and attach a tarball to the GitHub release.
@@ -95,12 +95,12 @@ Push a tag such as `v0.1.3` to let the release workflow build and attach a tarba
 The repository publishes a format-1 plugin index at:
 
 ```text
-https://mango2630.github.io/dsh-conversation-pins/index.json
+https://yuanxiao2630.github.io/dsh-conversation-pins/index.json
 ```
 
 In DSH, enable **Custom plugin indexes** under Experimental plugins, open **Discover → Add index source**, and paste that URL. The index pins an exact release commit, so installation does not depend on the moving `main` branch.
 
-The human-readable landing page is [mango2630.github.io/dsh-conversation-pins](https://mango2630.github.io/dsh-conversation-pins/).
+The human-readable landing page is [yuanxiao2630.github.io/dsh-conversation-pins](https://yuanxiao2630.github.io/dsh-conversation-pins/).
 
 ## Usage
 

@@ -2,9 +2,10 @@
 
 All notable changes to this plugin are documented here.
 
-## Unreleased
+## 0.1.4
 
-- Publish a format-1 plugin index and GitHub Pages landing page for Discover.
+- Update repository, Pages, and plugin-index URLs after the GitHub account rename.
+- Publish the format-1 Discover index and landing page.
 
 ## 0.1.3
 

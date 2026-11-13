@@ -44,10 +44,10 @@
         "zh": "给段落、标题、列表、代码块和表格单元格打图钉，从每个会话独立的图钉面板一键跳回。支持快捷键、折叠轮次展开和历史加载。"
       },
       "icon": "icons/conversation-pins.svg",
-      "author": "mango2630",
-      "homepage": "https://github.com/mango2630/dsh-conversation-pins#readme",
+      "author": "yuanxiao2630",
+      "homepage": "https://github.com/yuanxiao2630/dsh-conversation-pins#readme",
       "repository": {
-        "url": "https://github.com/mango2630/dsh-conversation-pins"
+        "url": "https://github.com/yuanxiao2630/dsh-conversation-pins"
       },
       "metadata": {
         "category": "interface",
@@ -68,7 +68,7 @@
           "publishTimestamp": 1794368508,
           "source": {
             "type": "git",
-            "url": "https://github.com/mango2630/dsh-conversation-pins.git",
+            "url": "https://github.com/yuanxiao2630/dsh-conversation-pins.git",
             "commit": "283a009f3347e126a09d86e792cec6f2e2db9ec8"
           },
           "engines": {
